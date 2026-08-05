@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Courier Dashboard — 31°N</title>
+  <link rel="stylesheet" href="assets/css/staff.css">
+</head>
+<body data-staff-page="courier">
+  <header class="staff-header">
+    <a class="staff-logo" href="index.html"><img src="assets/images/31n-logo.png" alt="31°N"></a>
+    <div class="staff-eyebrow">Courier operations</div>
+    <div class="staff-user"><span data-user-label>Loading…</span><button class="staff-link-button" data-logout>Log out</button></div>
+  </header>
+  <main class="staff-main">
+    <div class="staff-title-row"><div><div class="staff-eyebrow">Assigned deliveries</div><h1>Courier route.</h1></div><button class="staff-button staff-button--secondary" data-refresh>Refresh</button></div>
+    <div class="metric-grid" data-metrics></div>
+    <div class="status-grid" data-statuses></div>
+    <div class="orders-toolbar">
+      <input type="search" placeholder="Order, customer or phone" data-order-search>
+      <select data-order-status><option value="all">All assigned</option><option value="ready">Ready</option><option value="out_for_delivery">Out for delivery</option><option value="delivered">Delivered</option><option value="failed_delivery">Failed delivery</option></select>
+      <button class="staff-button staff-button--compact" data-order-filter>Apply</button>
+    </div>
+    <div class="courier-cards" data-courier-orders></div>
+    <div class="staff-empty" data-orders-empty hidden>No assigned orders match this view.</div>
+    <section class="staff-card security-form courier-security">
+      <details><summary>Change password</summary><form class="staff-form" data-password-form><label>Current password<input name="currentPassword" type="password" required></label><label>New password<input name="newPassword" type="password" minlength="12" required></label><label>Confirm new password<input name="confirmPassword" type="password" minlength="12" required></label><button class="staff-button" type="submit">Update password</button><div class="staff-notice" data-password-notice></div></form></details>
+    </section>
+  </main>
+  <div class="order-drawer-backdrop" data-order-drawer><aside class="order-drawer"><div class="drawer-top"><div><div class="staff-eyebrow">Delivery detail</div><h2 data-order-title>Order</h2></div><button class="staff-link-button" data-close-order>Close</button></div><div data-order-detail></div></aside></div>
+  <script src="assets/js/staff.js" defer></script>
+</body>
+</html>

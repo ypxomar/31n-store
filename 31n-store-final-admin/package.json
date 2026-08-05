@@ -1,0 +1,13 @@
+{
+  "name": "31n-store",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check assets/js/app.js && node --check assets/js/staff.js"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "currency": "EGP",
+  "deliveryRate": 0.03,
+  "products": {
+    "fearless-acid-washed-tee": {
+      "slug": "fearless-acid-washed-tee",
+      "name": "Fearless Tee",
+      "shortName": "Fearless Tee",
+      "price": 999,
+      "colors": [
+        "Dark Grey",
+        "Hunter Green",
+        "Pink"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "perfectly-flawed-tee": {
+      "slug": "perfectly-flawed-tee",
+      "name": "The Perfectly Flawed Tee",
+      "shortName": "Perfectly Flawed",
+      "price": 999,
+      "colors": [
+        "Black",
+        "White",
+        "Hunter Green",
+        "Burgundy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "xxxi-n-sweatpants": {
+      "slug": "xxxi-n-sweatpants",
+      "name": "XXXI°N Sweatpants",
+      "shortName": "XXXI°N Sweatpants",
+      "price": 1099,
+      "colors": [
+        "Black",
+        "Grey",
+        "Hunter Green"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "alexandria-is-rap-racore-edition": {
+      "slug": "alexandria-is-rap-racore-edition",
+      "name": "Alexandria is Rap (Racore Edition)",
+      "shortName": "Racore Edition",
+      "price": 999,
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "shehab-x-abyu-special-tee": {
+      "slug": "shehab-x-abyu-special-tee",
+      "name": "Shehab x Abyu Special",
+      "shortName": "Shehab x Abyu",
+      "price": 1049,
+      "colors": [
+        "White"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "31n-gold-lap-sweatpants": {
+      "slug": "31n-gold-lap-sweatpants",
+      "name": "31°N Gold Lap Sweatpants",
+      "shortName": "Gold Lap Sweatpants",
+      "price": 1199,
+      "colors": [
+        "Black",
+        "Grey"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "stitched-oversized-rebirth-tee": {
+      "slug": "stitched-oversized-rebirth-tee",
+      "name": "Stitched Oversized Rebirth Tee",
+      "shortName": "Rebirth Tee",
+      "price": 1199,
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "polo-b31ieve-class-shirt": {
+      "slug": "polo-b31ieve-class-shirt",
+      "name": "Polo b31ieve Class Shirt",
+      "shortName": "b31ieve Polo",
+      "price": 899,
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "b31ieve-caps": {
+      "slug": "b31ieve-caps",
+      "name": "b31ieve Caps",
+      "shortName": "b31ieve Cap",
+      "price": 549,
+      "colors": [
+        "Black",
+        "Red",
+        "Burgundy"
+      ],
+      "sizes": [
+        "One Size"
+      ]
+    },
+    "b31ieve-star-tank-top": {
+      "slug": "b31ieve-star-tank-top",
+      "name": "b31ieve✶ Tank Top",
+      "shortName": "b31ieve Tank",
+      "price": 699,
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "b31ieve-basics-sweatshorts": {
+      "slug": "b31ieve-basics-sweatshorts",
+      "name": "b31ieve Basics Sweatshorts",
+      "shortName": "b31ieve Sweatshorts",
+      "price": 899,
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    }
+  }
+}

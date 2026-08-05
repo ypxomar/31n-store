@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Dashboard — 31°N</title>
+  <link rel="stylesheet" href="assets/css/staff.css">
+</head>
+<body data-staff-page="admin">
+  <header class="staff-header">
+    <a class="staff-logo" href="index.html"><img src="assets/images/31n-logo.png" alt="31°N"></a>
+    <nav class="staff-nav">
+      <button class="staff-nav-button is-active" data-section-button="orders">Orders</button>
+      <button class="staff-nav-button" data-section-button="workers">Workers</button>
+      <button class="staff-nav-button" data-section-button="security">Security</button>
+    </nav>
+    <div class="staff-user"><span data-user-label>Loading…</span><button class="staff-link-button" data-logout>Log out</button></div>
+  </header>
+
+  <main class="staff-main">
+    <section data-section="orders">
+      <div class="staff-title-row"><div><div class="staff-eyebrow">31°N operations</div><h1>Order control.</h1></div><button class="staff-button staff-button--secondary" data-refresh>Refresh</button></div>
+      <div class="metric-grid" data-metrics></div>
+      <div class="status-grid" data-statuses></div>
+      <div class="orders-toolbar">
+        <input type="search" placeholder="Order, customer, phone or email" data-order-search>
+        <select data-order-status>
+          <option value="all">All statuses</option>
+          <option value="new">New</option>
+          <option value="confirmed">Confirmed</option>
+          <option value="preparing">Preparing</option>
+          <option value="ready">Ready</option>
+          <option value="out_for_delivery">Out for delivery</option>
+          <option value="delivered">Delivered</option>
+          <option value="failed_delivery">Failed delivery</option>
+          <option value="cancelled">Cancelled</option>
+        </select>
+        <button class="staff-button staff-button--compact" data-order-filter>Apply</button>
+      </div>
+      <div class="orders-table-wrap"><table class="orders-table"><thead><tr><th>Order</th><th>Customer</th><th>Status</th><th>Courier</th><th>Items</th><th>Total</th><th></th></tr></thead><tbody data-orders-body></tbody></table></div>
+      <div class="staff-empty" data-orders-empty hidden>No orders match this view.</div>
+    </section>
+
+    <section data-section="workers" hidden>
+      <div class="staff-title-row"><div><div class="staff-eyebrow">Restricted accounts</div><h1>Workers.</h1></div></div>
+      <div class="worker-layout">
+        <form class="staff-card staff-form" data-worker-form>
+          <h2>Create worker</h2>
+          <label>Display name<input name="displayName" required maxlength="80"></label>
+          <label>Username<input name="username" required maxlength="40" pattern="[A-Za-z0-9._-]{3,40}"></label>
+          <label>Role<select name="role"><option value="courier">Courier</option><option value="admin">Admin</option></select></label>
+          <label>Temporary password<input name="password" type="password" required minlength="12" maxlength="128"></label>
+          <p class="staff-muted staff-small">Use uppercase, lowercase, a number and a symbol.</p>
+          <button class="staff-button" type="submit">Create account</button>
+          <div class="staff-notice" data-worker-notice></div>
+        </form>
+        <div class="staff-card"><div class="card-heading"><h2>Active accounts</h2><button class="staff-link-button" data-reload-workers>Reload</button></div><div class="worker-list" data-worker-list></div></div>
+      </div>
+    </section>
+
+    <section data-section="security" hidden>
+      <div class="staff-title-row"><div><div class="staff-eyebrow">Account protection</div><h1>Security.</h1></div></div>
+      <form class="staff-card staff-form security-form" data-password-form>
+        <h2>Change your password</h2>
+        <label>Current password<input name="currentPassword" type="password" autocomplete="current-password" required></label>
+        <label>New password<input name="newPassword" type="password" autocomplete="new-password" minlength="12" required></label>
+        <label>Confirm new password<input name="confirmPassword" type="password" autocomplete="new-password" minlength="12" required></label>
+        <button class="staff-button" type="submit">Update password</button>
+        <div class="staff-notice" data-password-notice></div>
+      </form>
+    </section>
+  </main>
+
+  <div class="order-drawer-backdrop" data-order-drawer>
+    <aside class="order-drawer"><div class="drawer-top"><div><div class="staff-eyebrow">Order detail</div><h2 data-order-title>Order</h2></div><button class="staff-link-button" data-close-order>Close</button></div><div data-order-detail></div></aside>
+  </div>
+  <script src="assets/js/staff.js" defer></script>
+</body>
+</html>

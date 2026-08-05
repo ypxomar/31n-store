@@ -1,0 +1,5 @@
+.env
+node_modules/
+data/orders.sqlite-wal
+data/orders.sqlite-shm
+data/*.backup.sqlite

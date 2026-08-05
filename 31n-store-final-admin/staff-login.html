@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Staff Login — 31°N</title>
+  <link rel="stylesheet" href="assets/css/staff.css">
+</head>
+<body class="staff-login-page" data-staff-page="login">
+  <main class="login-shell">
+    <section class="login-panel">
+      <a class="staff-logo" href="index.html" aria-label="31°N storefront"><img src="assets/images/31n-logo.png" alt="31°N"></a>
+      <div class="staff-eyebrow">Private operations portal</div>
+      <h1>Staff access.</h1>
+      <p class="staff-muted">Admins and couriers only. Sign-in attempts are rate-limited and sessions expire automatically.</p>
+      <form class="staff-form" data-login-form>
+        <label>Username<input name="username" autocomplete="username" required maxlength="40"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required maxlength="128"></label>
+        <button class="staff-button" type="submit">Sign in</button>
+        <div class="staff-notice" data-login-notice role="status"></div>
+      </form>
+      <a class="staff-back" href="index.html">← Return to store</a>
+    </section>
+  </main>
+  <script src="assets/js/staff.js" defer></script>
+</body>
+</html>
